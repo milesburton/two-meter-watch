@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:22-bookworm-slim AS build
+FROM node:26-bookworm-slim AS build
 WORKDIR /app
 
 # python3/make/g++ are needed to build better-sqlite3's native addon when no
@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build:ui || true
 RUN npm run version:generate || true
 
-FROM node:22-bookworm-slim AS final
+FROM node:26-bookworm-slim AS final
 WORKDIR /app
 
 RUN apt-get update \
