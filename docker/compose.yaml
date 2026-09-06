@@ -1,0 +1,17 @@
+services:
+  two-meter-watch:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: ghcr.io/milesburton/two-meter-watch:latest
+    container_name: two-meter-watch
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    volumes:
+      - ./data:/app/data
+      - ./images:/app/images
+    ports:
+      - "3000:3000"

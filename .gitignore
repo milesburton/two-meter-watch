@@ -1,0 +1,14 @@
+node_modules/
+dist/
+data/
+images/
+*.db
+*.db-journal
+.env
+coverage/
+src/frontend/dist/
+src/frontend/node_modules/
+src/frontend/public/version.json
+*.log
+.DS_Store
+*.tsbuildinfo
