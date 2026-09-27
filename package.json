@@ -45,7 +45,7 @@
     "@vitest/coverage-istanbul": "^5.0.1",
     "@vitest/coverage-v8": "^5.0.1",
     "husky": "^9.1.6",
-    "tsx": "^4.19.1",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^5.0.1"
   }
