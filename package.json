@@ -42,7 +42,7 @@
     "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^26.6.6",
     "@types/ws": "^8.18.2",
-    "@vitest/coverage-istanbul": "^5.0.1",
+    "@vitest/coverage-istanbul": "^5.1.0",
     "@vitest/coverage-v8": "^5.0.5",
     "husky": "^9.1.6",
     "tsx": "^4.23.15",
